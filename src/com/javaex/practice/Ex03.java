@@ -1,7 +1,5 @@
 package com.javaex.practice;
 
-import java.util.Scanner;
-
 public class Ex03 {
 
 	public static void main(String[] args) {
@@ -11,11 +9,12 @@ public class Ex03 {
 			System.out.println("청소년 입니다");
 		}
 		*/
-		Scanner sc = new Scanner(System.in);
-		int age = sc.nextInt();		
-		if(age<18) {
-			System.out.println("청소년 입니다");
-		sc.close();
+		int age = 15;
+
+		//if (0 < age < 18) {
+		if (0 < age && age < 18) {	//age가 0살 초과이고 18살 미만 이면 	
+			
+			System.out.println("청소년 입니다.");
 			
 		}
 	}

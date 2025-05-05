@@ -7,27 +7,33 @@ public class Ex11 {
 	public static void main(String[] args) {
 		
 		
+		
+		
+		int quotient; //몫
+		int remainder; //나머지
+		
 		Scanner sc = new Scanner(System.in);
-		
 		System.out.print("첫번째 숫자: ");
-		int num = sc.nextInt();
+		int num01 = sc.nextInt();
+		
 		System.out.print("두번째 숫자: ");
-		int num2 = sc.nextInt();
-		if (num == 0 || num2 == 0) {
-			System.out.println("0으로는 나눌 수 없습니다.");
-		} else {
-			int big = (num > num2) ? num : num2;
-			int small = (num < num2) ? num : num2;
+		int num02 = sc.nextInt();
+		
+		if(num01>num02) { // num1이 num2보다 클때
+			quotient = num01 / num02;
+			remainder = num01 % num02;
 			
-			int quotient = big / small;
-			int remainder = big % small;
+		}else { //num2가 num1보다 크거나 같을때
+			quotient = num02 / num01;
+			remainder = num02 % num01;
 			
-			System.out.println("몫: " + quotient);
-			System.out.println("나머지: " + remainder);
 		}
+
+		System.out.println("몫: " + quotient );
+		System.out.println("나머지: " + remainder );
 		
-		
-		
+
 		sc.close();
 	}
+
 }

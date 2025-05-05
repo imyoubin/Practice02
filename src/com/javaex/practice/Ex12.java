@@ -19,6 +19,7 @@ public class Ex12 {
 		
 		System.out.print("숫자3: ");
 		int num3 = sc.nextInt();
+		
 		int min = num1;
 		if(num2<min) {
 			min = num2;

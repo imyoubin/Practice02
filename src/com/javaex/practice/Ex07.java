@@ -12,7 +12,8 @@ public class Ex07 {
 		System.out.println("나이를 입력해주세요");
 		System.out.print("나이: ");
 		age = sc.nextInt();
-		if(age <=7) {//취학전아동
+		
+		if(age <=7) {//취학전아동	//if( age>0 && age<=7 ) 
 			System.out.println("취학전아동//무료 입니다.");
 		}else if(age <= 13){//초등학생
 			System.out.println("초등학생//2000원 입니다");
